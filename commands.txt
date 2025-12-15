@@ -1,0 +1,30 @@
+Basic Git Setup
+git --version
+git config --global user.name "Your Name"
+git config --global user.email "you@email.com"
+git config --list
+
+Repository Commands
+git init                  # Initialize a new repository
+git clone <repo_url>      # Clone remote repository
+ 
+ File & Status Commands
+git status                # Check repo status
+git add file.txt          # Stage a file
+git add .                 # Stage all files
+git rm file.txt           # Remove file
+git mv old new            # Rename file
+
+Commit Commands
+git commit -m "message"   # Commit staged changes
+git commit -am "message"  # Add & commit tracked files
+git log                   # Commit history
+git log --oneline
+git show <commit-id>
+
+Branching Commands
+git branch                # List branches
+git branch dev             # Create branch
+git checkout dev           # Switch branch
+git checkout -b feature    # Create & switch
+git branch -d dev          # Delete branch
